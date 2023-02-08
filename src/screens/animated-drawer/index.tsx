@@ -11,8 +11,8 @@ import {Landing} from '../home';
 import {Profile} from '../profile';
 
 const ANIMATION_DURATION = 1000;
-const TRANSALTION_X_OFFSET = 200;
-const TRANSALTION_Y_OFFSET = 50;
+const TRANSLATION_X_OFFSET = 200;
+const TRANSLATION_Y_OFFSET = 50;
 
 export const AnimatedDrawer = () => {
   const translationX = useSharedValue(0);
@@ -59,10 +59,10 @@ export const AnimatedDrawer = () => {
   });
 
   const animateOpen = useCallback(() => {
-    translationX.value = withTiming(TRANSALTION_X_OFFSET, {
+    translationX.value = withTiming(TRANSLATION_X_OFFSET, {
       duration: ANIMATION_DURATION,
     });
-    translationY.value = withTiming(TRANSALTION_Y_OFFSET, {
+    translationY.value = withTiming(TRANSLATION_Y_OFFSET, {
       duration: ANIMATION_DURATION,
     });
   }, [translationX, translationY]);

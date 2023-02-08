@@ -21,7 +21,7 @@ export const Profile = (props: Props) => {
 
       {['Start', 'Your Cart', 'Favourites', 'Your Orders'].map((title, i) => (
         <Button
-          // testing version
+          // will do for the demo version
           onPress={props.onPress}
           isSelected={i === 0}
           title={title}
