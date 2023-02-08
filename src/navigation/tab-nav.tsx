@@ -16,8 +16,6 @@ const TabBarIcon =
   (route: RouteProp<ParamListBase, string>) =>
   ({focused, size, color}: TabBarIconProps) => {
     const iconName = tabBarIcons[`${route.name}${focused ? '-focused' : ''}`];
-    console.log(route, iconName);
-    // You can return any component that you like here!
     return <Ionicons name={iconName} size={size} color={color} />;
   };
 
