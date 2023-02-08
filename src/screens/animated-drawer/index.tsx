@@ -7,8 +7,7 @@ import {
   useSharedValue,
   withTiming,
 } from 'react-native-reanimated';
-import {Landing} from '../home';
-import {Profile} from '../profile';
+import {Landing, Profile} from '..';
 
 const ANIMATION_DURATION = 1000;
 const TRANSLATION_X_OFFSET = 200;
